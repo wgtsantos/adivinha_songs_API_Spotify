@@ -1,0 +1,100 @@
+body {
+    background-image: url(https://img.freepik.com/premium-vector/musical-notes-pattern_608527-2411.jpg);
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    max-width: 250px;
+}
+
+#logo_game {
+    max-width: 100px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-select {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+label {
+    font-weight: bold;
+    color: #495057;
+}
+
+select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.25);
+}
+
+/* Estilos da imagem em formato de disco */
+#albumImage {
+    border-radius: 50%; 
+    max-width: 400px; 
+    border: 5px solid #f8f9fa; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    object-fit: cover; 
+    animation: none; 
+}
+
+/* Animação de rotação */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Quando a música estiver tocando, a imagem do álbum roda */
+#albumImage.playing {
+    animation: spin 4s linear infinite; /* Rotação contínua a cada 4 segundos */
+}
+
+h3 {
+    font-size: 28px;
+}
+
+#contarTentativas {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+#timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Efeito hover dos botões das opções */
+.option-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #007bff; 
+    color: #ffffff;
+}
+
+/* Estilos para o resultado correto */
+.correto {
+    color: #28a745; 
+    font-weight: bold; 
+    font-size: 1.2rem;
+}
+
+/* Estilos para o resultado incorreto */
+.errado {
+    color: #dc3545; 
+    font-weight: bold;
+    font-size: 1.2rem;
+}

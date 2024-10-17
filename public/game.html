@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação Musical - API Spotify</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5 mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg rounded-4 p-5">
+                    <!-- Botão de Voltar -->
+                    <div class="d-flex justify-content-start">
+                        <a href="/" class="btn btn-outline-info">VOLTAR</a>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <img id="logo_game" src="img/logo.png" class="img-fluid mb-3" alt="logo" />
+                        </div>
+                    </div>
+
+                    <!-- Título e descrição -->
+                    <div class="text-center mb-4">
+                        <h3 class="text-primary fw-bold">Jogo de Adivinhação Musical - API Spotify </h3>
+                        <p class="lead fw-bold" id="playlistTitle"></p>
+                        <p class="lead">Adivinhe a música ouvindo a prévia!</p>
+                    </div>
+
+                    <!-- Exibir o número de tentativas -->
+                    <div class="text-center mb-4">
+                        <div id="contarTentativas" class="lead fw-bolder text-success">Tentativa 1/10</div>
+                    </div>
+
+                    <!-- Barra de progresso e timer -->
+                    <div class="text-center mb-4">
+                        <progress id="progressBar" value="0" max="30" class="w-100 mb-2"></progress>
+                        <div id="timer" class="fw-bolder text-danger">30s</div>
+                    </div>
+
+                    <!-- Player de áudio e capa do álbum -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <audio id="audioPlayer" class="w-100 my-3" style="display:none;"></audio>
+                            <img id="albumImage" class="mb-3" style="display:none;" alt="Capa do Álbum" />
+                        </div>
+                    </div>
+
+                    <!-- Opções de resposta e botões -->
+                    <div class="text-center">
+                        <div id="options" class="d-grid gap-2 mb-3"></div>
+                        <button id="nextButton" class="btn btn-primary w-100 mt-3" style="display:none;">
+                            <i class="fas fa-arrow-right me-2"></i>  Próxima Música
+                        </button>
+                        <button id="btnFinalizar" class="btn btn-success w-100 mt-3" style="display:none;">
+                            <i class="fas fa-flag-checkered me-2"></i> Terminar
+                        </button>
+                        <div id="result" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS (Optional for interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
