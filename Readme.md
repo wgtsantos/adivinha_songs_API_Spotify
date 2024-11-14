@@ -80,7 +80,7 @@ Contribuições são bem-vindas! Se você quiser contribuir com melhorias, siga 
 
 Você pode acessar a aplicação rodando no Heroku através do seguinte link:
 
-[**Acesse o Adivinha Songs no Heroku**](https://adivinha-songs-e1351735c341.herokuapp.com/)
+[**Acesse o Adivinha Songs no Render**](https://adivinha-songs.onrender.com/)
 
 ---
 
