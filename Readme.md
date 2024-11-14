@@ -78,7 +78,7 @@ Contribuições são bem-vindas! Se você quiser contribuir com melhorias, siga 
 
 ## Acesso à Aplicação
 
-Você pode acessar a aplicação rodando no Heroku através do seguinte link:
+Você pode acessar a aplicação rodando no Render através do seguinte link:
 
 [**Acesse o Adivinha Songs no Render**](https://adivinha-songs.onrender.com/)
 
